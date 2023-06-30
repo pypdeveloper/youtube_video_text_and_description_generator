@@ -9,8 +9,6 @@ st.title("Youtube Video Title And Description Generator")
 
 input = st.text_input(label="Enter your topic here: ")
 
-os.environ["OPENAI_API_KEY"] = "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"
-
 llm = OpenAI(temperature=0.8, verbose=True)
 
 title_prompt_template = """
